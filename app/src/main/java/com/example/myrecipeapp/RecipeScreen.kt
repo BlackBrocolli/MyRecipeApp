@@ -66,7 +66,6 @@ fun CategoryItem(category: Category) {
         )
         Text(
             text = category.strCategory,
-            color = Color.Black,
             style = TextStyle(fontWeight = FontWeight.Bold),
             modifier = Modifier.padding(top = 4.dp)
         )
