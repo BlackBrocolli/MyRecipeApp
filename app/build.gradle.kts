@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -50,6 +51,9 @@ android {
 }
 
 dependencies {
+
+    // Navigation compose
+    implementation("androidx.navigation:navigation-compose:2.7.4")
 
     // Compose ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
